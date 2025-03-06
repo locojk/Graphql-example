@@ -27,7 +27,7 @@ app.get('/', (_req, res) => {
   res.end(ruruHTML({ endpoint: '/graphql' }));
 });
 
-// ✅ Retrieve GraphQL Schema via POST (Fix for EvoMaster)
+//  Retrieve GraphQL Schema via POST
 app.post('/schema', async (req, res) => {
   try {
     const result = await graphql({ schema, source: getIntrospectionQuery() });
@@ -37,7 +37,7 @@ app.post('/schema', async (req, res) => {
   }
 });
 
-// ✅ Start Server
+// Start Server
 app.listen(4000, () => {
   console.log(`
   API running on: http://localhost:4000

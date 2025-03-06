@@ -52,7 +52,11 @@ EvoMaster automatically generates tests. Ensure you have the Python dependencies
 pip install requests timeout-decorator
 ```
 
-Then, you can execute tests.
+Then, you can execute tests by this:
+```bash
+evomaster  --problemType GRAPHQL --bbTargetUrl http://localhost:4000/graphql --blackBox true --maxTime 30s --ratePerMinute 60
+evomaster  --problemType GRAPHQL --bbTargetUrl http://localhost:4000/graphql --blackBox true --maxTime 30s --ratePerMinute 60 --outputFormat JAVA_JUNIT_4 
+```
 
 Make sure your server (`npm run start`) is running during tests.
 

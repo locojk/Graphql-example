@@ -1,0 +1,9 @@
+node_modules/
+database.sqlite
+.env
+.DS_Store
+npm-debug.log
+yarn-error.log
+generated_tests/
+generated_tests/__pycache__/
+em.yaml
